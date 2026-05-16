@@ -1,0 +1,267 @@
+/* styles.css */
+html{
+	width: 100%;
+	height: 100%;
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;700&display=swap');
+
+
+body {
+  font-family: 'Fraunces';
+  background-image: url("../img/Marble.jpg"); /* adjust path if needed */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: black;
+  
+}
+
+.blog-title {
+  font-family: 'UnifrakturMaguntia', cursive;
+  color: black;
+  text-align: center;
+  font-size: 4rem;
+  margin: 20px 0;
+}
+
+.main-content {
+  width: 70%;
+  padding: 20px;
+}
+
+/* Main layout */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Sidebar, Left */
+.sidebar {
+  align-content: start;
+  width: 100%;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: 1fr; /* force vertical stack */
+  gap: 5px; /* tight spacing */
+}
+
+/* shared styling for each block */
+.sidebar-item {
+  margin: 0; /* remove any accidental spacing */
+  padding: 8px; /* slightly tighter than before */
+  
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.sidebar-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hook {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.link a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+
+/* Posts (right) */
+
+.posts {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.Blog-Container {
+  display: grid;
+  gap: 10px;
+
+  border: 2px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+/*--Blog Content--*/
+.post-title {
+  font-size: 2rem;      
+  font-weight: 700;
+}
+
+.post-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-title a:hover {
+  text-decoration: underline;
+}
+
+.post-date {
+  font-size: 0.8rem;     
+  opacity: 0.7;
+}
+
+.post-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Pagination container */
+/* Center everything */
+.pagination {
+  grid-column: 1 / -1;   /* span entire grid width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+/* Arrow buttons */
+.arrow {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Main number container */
+.page-box {
+  display: flex;
+  text-align: center;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden; 
+}
+
+/* Numbers */
+.page-box a,
+.page-box span {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+  border-right: 1px solid black;
+}
+
+.page-box a:last-child {
+  border-right: none;
+}
+
+/* Current page (not clickable) */
+.current {
+  background-color: rgba(0,0,0,0.1);
+  font-weight: bold;
+}
+
+/*comments*/
+.comments-section {
+	margin-top: 20px;
+
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 10px;
+	padding: 15px;
+}
+
+.comments-title {
+	font-size: 1.5rem;
+	font-weight: bold;
+
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+
+	border-bottom: 2px solid rgba(0,0,0,0.2);
+}
+
+.comment-box {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+
+	padding: 15px 0;
+
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.comment-box:last-child {
+	border-bottom: none;
+}
+
+.comment-box img {
+	width: 50px;
+	height: 50px;
+
+	object-fit: cover;
+	border-radius: 50%;
+	flex-shrink: 0;
+}
+
+.comment-content {
+	width: 100%;
+}
+
+.username {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.comment {
+	line-height: 1.4;
+}
+
+/* Replies */
+.replies {
+	margin-top: 10px;
+	border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+.reply-1,
+.reply-2,
+.reply-3,
+.reply-4,
+.reply-5 {
+	padding-top: 15px;
+}
+
+.reply-1 {
+	margin-left: 30px;
+}
+
+.reply-2 {
+	margin-left: 60px;
+}
+
+.reply-3 {
+	margin-left: 90px;
+}
+
+.reply-4 {
+	margin-left: 120px;
+}
+
+.reply-5 {
+	margin-left: 150px;
+}
